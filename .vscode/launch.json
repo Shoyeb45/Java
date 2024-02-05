@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ModularExpo3",
+            "request": "launch",
+            "mainClass": "ModularExpo3",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
             "name": "ModularExpo2",
             "request": "launch",
             "mainClass": "ModularExpo2",

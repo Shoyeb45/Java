@@ -5,12 +5,12 @@ public class ModularExpo2 {
 
     public static long modExpo(long a, long p, long m){
         if(p == 0)
-        return 0;
+        return 1;
         if(p == 1)
         return a % m;
 
-        if(a % 2 == 0){
-            return ( modExpo(a, p/2, m) * modExpo(a, p/2, m)) % m;
+        if(p % 2 == 0){
+            return ( modExpo(a, p/2, m)  * modExpo(a, p/2, m) ) % m;
         }else{
             return ( modExpo(a, p/2, m) * modExpo(a, p/2, m) * a) % m;
         }
