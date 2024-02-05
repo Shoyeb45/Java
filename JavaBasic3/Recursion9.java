@@ -5,7 +5,7 @@ import java.util.*;
 public class Recursion9 {
     public static void Reverse(String name , int n ,String  reve ) {
         if(n == 0 ){
-            reve =reve +name.charAt(n);
+            reve = reve +name.charAt(n);
             System.out.println(reve);
             return;
         }

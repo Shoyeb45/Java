@@ -1,4 +1,4 @@
-//Printing from 1 to 5
+//Printing from 1 to n
 
 import java.util.*;
 
@@ -13,10 +13,10 @@ public class Recursion2 {
             PrintNum(m+1,n);  //Recursive statement
     }
         public class Main{
-            public static void main(String [] args){
+            public static void main(String[] args){
            Scanner sc = new Scanner(System.in);
            int n= sc.nextInt();
-                int m=1;
+                int m = 1;
                 PrintNum(m , n);
 
                 sc.close();

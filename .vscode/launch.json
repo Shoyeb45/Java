@@ -1,0 +1,566 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "reversingString",
+            "request": "launch",
+            "mainClass": "reversingString",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "exponentiation",
+            "request": "launch",
+            "mainClass": "exponentiation",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "vowelCount",
+            "request": "launch",
+            "mainClass": "vowelCount",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "sumOfDigit",
+            "request": "launch",
+            "mainClass": "sumOfDigit",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "oneToN",
+            "request": "launch",
+            "mainClass": "oneToN",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "Launch Java Program",
+            "request": "launch",
+            "mainClass": ""
+        },
+        {
+            "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Arrays1$Main",
+            "request": "launch",
+            "mainClass": "Arrays1$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "Arrays2$Main",
+            "request": "launch",
+            "mainClass": "Arrays2$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "Arrays3$Main",
+            "request": "launch",
+            "mainClass": "Arrays3$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "BestPatternQ1$Main",
+            "request": "launch",
+            "mainClass": "BestPatternQ1$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "BestPatternQ10$Main",
+            "request": "launch",
+            "mainClass": "BestPatternQ10$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "BestPatternQ2$Main",
+            "request": "launch",
+            "mainClass": "BestPatternQ2$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "BestPatternQ3$Main",
+            "request": "launch",
+            "mainClass": "BestPatternQ3$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "BestPatternQ4$Main",
+            "request": "launch",
+            "mainClass": "BestPatternQ4$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "BestPatternQ5$Main",
+            "request": "launch",
+            "mainClass": "BestPatternQ5$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "BestPatternQ6$Main",
+            "request": "launch",
+            "mainClass": "BestPatternQ6$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "BestPatternQ7$Main",
+            "request": "launch",
+            "mainClass": "BestPatternQ7$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "BestPatternQ8$Main",
+            "request": "launch",
+            "mainClass": "BestPatternQ8$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "BestPatternQ9$Main",
+            "request": "launch",
+            "mainClass": "BestPatternQ9$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "BitManipulation$Main",
+            "request": "launch",
+            "mainClass": "BitManipulation$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "FirstClass",
+            "request": "launch",
+            "mainClass": "FirstClass",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "Functions1",
+            "request": "launch",
+            "mainClass": "Functions1",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "Functions2$Main",
+            "request": "launch",
+            "mainClass": "Functions2$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "Functions3$Main",
+            "request": "launch",
+            "mainClass": "Functions3$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "Functions4$Main",
+            "request": "launch",
+            "mainClass": "Functions4$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "HW1$Main",
+            "request": "launch",
+            "mainClass": "HW1$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "HW10$Main",
+            "request": "launch",
+            "mainClass": "HW10$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "HW11$Main",
+            "request": "launch",
+            "mainClass": "HW11$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "HW12$Main",
+            "request": "launch",
+            "mainClass": "HW12$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "HW13$Main",
+            "request": "launch",
+            "mainClass": "HW13$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "HW14$Main",
+            "request": "launch",
+            "mainClass": "HW14$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "HW15$Main",
+            "request": "launch",
+            "mainClass": "HW15$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "HW16$Main",
+            "request": "launch",
+            "mainClass": "HW16$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "HW17$Main",
+            "request": "launch",
+            "mainClass": "HW17$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "HW18$Main",
+            "request": "launch",
+            "mainClass": "HW18$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "HW19$Main",
+            "request": "launch",
+            "mainClass": "HW19$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "HW2$Main",
+            "request": "launch",
+            "mainClass": "HW2$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "HW20$Main",
+            "request": "launch",
+            "mainClass": "HW20$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "HW21$Main",
+            "request": "launch",
+            "mainClass": "HW21$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "HW22$Main",
+            "request": "launch",
+            "mainClass": "HW22$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "HW23$Main",
+            "request": "launch",
+            "mainClass": "HW23$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "HW24$Main",
+            "request": "launch",
+            "mainClass": "HW24$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "HW3$Main",
+            "request": "launch",
+            "mainClass": "HW3$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "HW4$Main",
+            "request": "launch",
+            "mainClass": "HW4$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "HW5",
+            "request": "launch",
+            "mainClass": "HW5",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "HW6$Main",
+            "request": "launch",
+            "mainClass": "HW6$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "HW7$Main",
+            "request": "launch",
+            "mainClass": "HW7$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "HW8$Main",
+            "request": "launch",
+            "mainClass": "HW8$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "HW9$Main",
+            "request": "launch",
+            "mainClass": "HW9$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "Question$Main",
+            "request": "launch",
+            "mainClass": "Question$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "Recursion1$Main",
+            "request": "launch",
+            "mainClass": "Recursion1$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "Recursion10",
+            "request": "launch",
+            "mainClass": "Recursion10",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "Recursion11",
+            "request": "launch",
+            "mainClass": "Recursion11",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "Recursion12",
+            "request": "launch",
+            "mainClass": "Recursion12",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "Recursion13",
+            "request": "launch",
+            "mainClass": "Recursion13",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "Recursion2$Main",
+            "request": "launch",
+            "mainClass": "Recursion2$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "Recursion3",
+            "request": "launch",
+            "mainClass": "Recursion3",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "Recursion4",
+            "request": "launch",
+            "mainClass": "Recursion4",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "Recursion5",
+            "request": "launch",
+            "mainClass": "Recursion5",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "Recursion6",
+            "request": "launch",
+            "mainClass": "Recursion6",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "Recursion7",
+            "request": "launch",
+            "mainClass": "Recursion7",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "Recursion8",
+            "request": "launch",
+            "mainClass": "Recursion8",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "Recursion9",
+            "request": "launch",
+            "mainClass": "Recursion9",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "Sortings1$Main",
+            "request": "launch",
+            "mainClass": "Sortings1$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "Sortings2$Main",
+            "request": "launch",
+            "mainClass": "Sortings2$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "Sortings3$Main",
+            "request": "launch",
+            "mainClass": "Sortings3$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "Strings1$Main",
+            "request": "launch",
+            "mainClass": "Strings1$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "Strings2$Main",
+            "request": "launch",
+            "mainClass": "Strings2$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "StringsBuilder$Main",
+            "request": "launch",
+            "mainClass": "StringsBuilder$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "TakingInput$Main",
+            "request": "launch",
+            "mainClass": "TakingInput$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "TwoDArray1$Main",
+            "request": "launch",
+            "mainClass": "TwoDArray1$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "TwoDArray2$Main",
+            "request": "launch",
+            "mainClass": "TwoDArray2$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "Variables",
+            "request": "launch",
+            "mainClass": "Variables",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "conditionals1$Main",
+            "request": "launch",
+            "mainClass": "conditionals1$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "conditionals2$Main",
+            "request": "launch",
+            "mainClass": "conditionals2$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "conditionals3$Main",
+            "request": "launch",
+            "mainClass": "conditionals3$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "conditionals4$Main",
+            "request": "launch",
+            "mainClass": "conditionals4$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "loops$Main",
+            "request": "launch",
+            "mainClass": "loops$Main",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "loopsQuestion$Main",
+            "request": "launch",
+            "mainClass": "loopsQuestion$Main",
+            "projectName": "Java_cd6e16aa"
+        }
+    ]
+}
