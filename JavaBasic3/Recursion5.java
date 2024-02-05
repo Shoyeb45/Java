@@ -3,13 +3,13 @@
 import java.util.*;
 
 public class Recursion5 {
-    public static void Fibonacci(int a , int b , int n){
-            if ( n ==0){
+    public static void Fibonacci(long a , long b , long n){
+            if ( n == 0){
                 return;
             }
 
         //now for new term i.e,after 0 and 1 
-        int c = a + b;
+        long c = a + b;
         System.out.print(" " + c);
 //Now calling function,but now c becomes b and b becomes a
 
@@ -18,7 +18,8 @@ public class Recursion5 {
       public static void main(String [] args){
         Scanner sc =new Scanner (System.in);
         System.out.print("Enter number of terms you want to enter:");
-        int  a=0, b=1, n = sc.nextInt();
+        long  a=0, b=1;
+        long n = sc.nextLong();
         System.out.print(a + " " + b);  //First two terms
 
         //calling function
