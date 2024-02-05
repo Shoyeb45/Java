@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ModularExpo2",
+            "request": "launch",
+            "mainClass": "ModularExpo2",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "ModularExponentiation1",
+            "request": "launch",
+            "mainClass": "ModularExponentiation1",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "ModularExponentiation",
+            "request": "launch",
+            "mainClass": "ModularExponentiation",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
             "name": "reversingString",
             "request": "launch",
             "mainClass": "reversingString",
