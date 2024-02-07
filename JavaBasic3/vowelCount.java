@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class vowelCount {
     public static int isVowel(char s){
-        if((s == 'a' || s == 'e' || s == 'i' || s == 'i' || s == 'o' || s == 'u'))
+        if((s == 'a' || s == 'e' || s == 'i' || s == 'o' || s == 'u'))
         return 1;
         return 0;
     }
@@ -17,7 +17,7 @@ public class vowelCount {
         Scanner sc = new Scanner(System.in);
         String s = sc.nextLine();
 
-        System.out.println(vowelCnt(0, s.length()-1, s));
+        System.out.println(vowelCnt(0, s.length(), s));
         sc.close();
     }
     

@@ -6,6 +6,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "decimalToBinary",
+            "request": "launch",
+            "mainClass": "decimalToBinary",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "modularCombinatoric",
+            "request": "launch",
+            "mainClass": "modularCombinatoric",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "EuclGCD",
+            "request": "launch",
+            "mainClass": "EuclGCD",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "gcd",
+            "request": "launch",
+            "mainClass": "gcd",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "fibonacci",
+            "request": "launch",
+            "mainClass": "fibonacci",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
             "name": "ModularExpo3",
             "request": "launch",
             "mainClass": "ModularExpo3",

@@ -1,5 +1,7 @@
 //Remove duplicates from string
 
+import java.util.Scanner;
+
 public class Recursion13 {
         public  static Boolean [] Alpha = new Boolean[26];  
     public static void Duplicates( String word , int ind ,String newWord){
@@ -21,12 +23,13 @@ public class Recursion13 {
         }
     }
     public static void main(String[] args){
-        String word ="abbccda";
+        Scanner sc = new Scanner(System.in);
+        String word = sc.next();
 
         for(int i =0 ; i<26 ;i++){
             Alpha[i]=false;
         }
         Duplicates(word , 0 ,"");
-        
+        sc.close();
     }
 }
