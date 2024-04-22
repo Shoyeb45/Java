@@ -1,5 +1,4 @@
-
-//Printing the spiral order matrix as output fot given matrix.
+//Printing the spiral order matrix as output for given matrix.
 import java.util.*;
 
 public class HW15 {
