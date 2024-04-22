@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "strinctlyIncr",
+            "request": "launch",
+            "mainClass": "strinctlyIncr",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
             "name": "decimalToBinary",
             "request": "launch",
             "mainClass": "decimalToBinary",
