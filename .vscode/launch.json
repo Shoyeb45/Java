@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "getBit",
+            "request": "launch",
+            "mainClass": "getBit",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
             "name": "strinctlyIncr",
             "request": "launch",
             "mainClass": "strinctlyIncr",
