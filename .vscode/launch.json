@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "rightmostBit",
+            "request": "launch",
+            "mainClass": "rightmostBit",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
             "name": "toggleBit",
             "request": "launch",
             "mainClass": "toggleBit",
