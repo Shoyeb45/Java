@@ -1,11 +1,34 @@
 import java.util.Scanner;
 
 public class getBit {
+    // To get binary representation of decimal numbers
+    public static String decToBinary(int n) {
+        StringBuilder s = new StringBuilder("");
+
+        if(n == 0)
+            return "0";
+        while(n >= 1) {
+            int digit = n % 2;
+            n /= 2;
+            s.append((char)(digit + '0'));
+        }
+        s.reverse();
+        return s.toString();
+    }
+
     // By left shift
-    public static int printkthBit(int n, int k) {
+    public static void printkthBit(int n, int k) {
         // Function to get kth bit
-        int bitMask = 1 << k;
-        return (bitMask & n) == 0 ? 0: 1;
+        int bitMask = 1 << (k - 1);
+        System.out.println("Left Shifting of 1 to k - 1 times: " + decToBinary(bitMask));
+        System.out.println("Taking and of left shifted 1 and n,\n" + decToBinary(n) + " & " + decToBinary(bitMask) + "\nResultant:" + (bitMask & n) + "(" + decToBinary((bitMask & n)) + ")");
+        System.out.println("Decision");
+        if((bitMask & n) == 0) {
+            System.out.println("Bit is off");
+        } else {
+            System.out.println("Bit is on");
+        }
+        System.out.println("Given number: " + decToBinary(n));
     }
 
     // By right shift
@@ -17,14 +40,7 @@ public class getBit {
         Scanner sc = new Scanner(System.in);
         int n = sc.nextInt();
         int i = sc.nextInt(); 
-        if(printkthBit(n, i) == 0)
-            System.out.println("By left shift - Bit is on at position " + i);
-        else
-            System.out.println("By left shift - Bit is off at position " + i);
-        if(getbit(n, i) == 0)
-            System.out.println("By right shift - Bit is on at position " + i);
-        else
-            System.out.println("By right shift - Bit is off at position " + i);
+        printkthBit(n, i);
         sc.close();
     }
 }
