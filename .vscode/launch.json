@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "intro2",
+            "request": "launch",
+            "mainClass": "intro2",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "intro",
+            "request": "launch",
+            "mainClass": "intro",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "loop.test",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "test",
+            "request": "launch",
+            "mainClass": "test",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
             "name": "rightmostBit",
             "request": "launch",
             "mainClass": "rightmostBit",
