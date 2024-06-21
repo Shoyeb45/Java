@@ -9,6 +9,9 @@ import java.util.NoSuchElementException;
  * 
  * Separate chaining is used to minimize the colliding. It's implemented using {@code ArrayList} data structure.
  * 
+ * <hr>
+ * {@code HashMap<K, V> mp = HashMap<K, V>();}
+ * 
  * @see ArrayList
  * @author Shoyeb Ansari
  */
@@ -18,6 +21,7 @@ public class HashMap<K, V> {
     public static final double MAX_THRESHOLD = 0.5;
 
     // Entry class for storing key, value and hashcode of key.
+    @SuppressWarnings("hiding")
     private class Entry<K, V> {
         K key;
         V value;
@@ -35,8 +39,8 @@ public class HashMap<K, V> {
     
     /**
      * Public constructor to initialize hash map.
-     * We can initialize hashmap with any dataa type as key and give any data type as value.<hr>
-     * {@code HashMap<K, V> name = new HashMap<>();}
+     * We can initialize hashmap with any data type as key and give any data type as value.<hr>
+     * {@code HashMap<K, V> name = new HashMap<K, V>();}
      */
     public HashMap() {
         this.sz = 0;
@@ -77,7 +81,7 @@ public class HashMap<K, V> {
     }
     
     /**
-     * Get size of the hash table.
+     * Get size of the hash map.
      */
     public int size() {
         return sz;
@@ -94,7 +98,7 @@ public class HashMap<K, V> {
     }
     
     /**
-     * This will check wheter the key is already present in hashtable or not.
+     * This will check wheter the key is already present in hash map or not.
      * @param key
      * @return
      * {@code true}, if present
@@ -110,7 +114,7 @@ public class HashMap<K, V> {
     }
     
     /**
-     * Deletes the particulatr  key from the hash table.
+     * Deletes the particulatr  key from the hash  map.
      * @param key
      * @return 
      * {@code NoSuchElementException} if key is not present.
@@ -152,7 +156,7 @@ public class HashMap<K, V> {
     }
     
     /**
-     * Resizing the hash table if current {@code loadfactor} exceedes the {@code MAX_THREHOLD}
+     * Resizing the hash map if current {@code loadfactor} exceedes the {@code MAX_THREHOLD}
      */
     private void resize() {
         int new_capacity = 2 * capacity;
