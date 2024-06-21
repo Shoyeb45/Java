@@ -5,13 +5,19 @@ import java.util.NoSuchElementException;
 
 
 /**
- * This is HashMap data structure . It uses generic data type and hashing function to convert given key into index of given capacity.
+ * This is HashTable data structure . It uses generic data type and hashing function to convert given key into index of given capacity.
+ * 
+ * Separate chaining is used to minimize the colliding. It's implemented using {@code ArrayList} data structure.
+ * 
+ * @see ArrayList
  * @author Shoyeb Ansari
  */
 public class HashMap<K, V> {
+    // Maximum size and Maximum Threshold for hashtable
     public static final int MAX_SIZE = 16;
     public static final double MAX_THRESHOLD = 0.5;
 
+    // Entry class for storing key, value and hashcode of key.
     private class Entry<K, V> {
         K key;
         V value;
@@ -27,6 +33,11 @@ public class HashMap<K, V> {
     private int capacity;
     public ArrayList<ArrayList<Entry<K, V>>> data;
     
+    /**
+     * Public constructor to initialize hash map.
+     * We can initialize hashmap with any dataa type as key and give any data type as value.<hr>
+     * {@code HashMap<K, V> name = new HashMap<>();}
+     */
     public HashMap() {
         this.sz = 0;
         this.capacity = MAX_SIZE;
@@ -37,37 +48,21 @@ public class HashMap<K, V> {
         }
     }
     
-    private int hash(K key) {
-        return key.hashCode();
-    }
-
-    private int getIndex(int hc) {
-        return (hc % capacity + capacity) % capacity; 
-    }
-
-    private void resize() {
-        int new_capacity = 2 * capacity;
-
-        ArrayList<ArrayList<Entry<K, V>>> new_data = new ArrayList<>();
-        for(int i = 0; i < new_capacity; i++) {
-            new_data.add(new ArrayList<Entry<K, V>>());
-        }
-
-        for(int i = 0; i < capacity; i++) {
-            for(Entry<K, V> entry: data.get(i)) {
-                int new_index = getIndex(entry.hashCode % new_capacity);
-                new_data.get(new_index).add(entry);
-            }
-        }
-        data = new_data;
-        capacity = new_capacity;
-    }
-
+    /**
+     * Inserting Key and value into Hash Table.
+     * The average time complexity of inserting operation will be {@math O(1)} 
+     * If the key is already present then it will update the value with new given value.<hr>
+     * {@code HashMap<Integer, Integer> mp = new HashMap<>();        
+     *        mp.insert(1, 12);  
+     * }
+     * @param k : key
+     * @param v : value
+     */
     public void insert(K k, V v) {
         if((double) sz / capacity > MAX_THRESHOLD) {
             this.resize();
         }
-
+        
         int idx = getIndex(hash(k));
         Entry<K, V> newEntry = new Entry<K,V>(k, v, idx);
         
@@ -80,15 +75,30 @@ public class HashMap<K, V> {
         data.get(idx).add(newEntry);
         sz++;   
     }
-
+    
+    /**
+     * Get size of the hash table.
+     */
     public int size() {
         return sz;
     }
-
+    
+    
+    /**
+     * Checks if hash map is empty or not.
+     * @returns
+     * {@code true} if empty
+     */
     boolean empty() {
         return (sz == 0);
     }
-
+    
+    /**
+     * This will check wheter the key is already present in hashtable or not.
+     * @param key
+     * @return
+     * {@code true}, if present
+     */
     boolean contains(K key) {
         int idx = getIndex(hash(key));
         for(int i = 0; i < data.get(i).size(); i++) {
@@ -98,7 +108,13 @@ public class HashMap<K, V> {
         }
         return false;
     }
-
+    
+    /**
+     * Deletes the particulatr  key from the hash table.
+     * @param key
+     * @return 
+     * {@code NoSuchElementException} if key is not present.
+     */
     void delKey(K key) {
         int idx = getIndex(hash(key));
         for(int i = 0; i < data.get(idx).size(); i++) {
@@ -108,7 +124,13 @@ public class HashMap<K, V> {
         }
         throw new NoSuchElementException("Key not found: " + key);
     }
-
+    
+    /**
+     * Getting the value of particular element by passing key as argument.
+     * @param key
+     * @return
+     * {@code null} if key is not present, else it will return the value of that key.
+     */
     V get(K key) {
         int idx = getIndex(hash(key));
         for(int i = 0; i < data.get(idx).size(); i++) {
@@ -117,6 +139,37 @@ public class HashMap<K, V> {
             }
         }
         return null;
+    }
+
+    // Getting hash key
+    private int hash(K key) {
+        return key.hashCode();
+    }
+    
+    // Get index for current capacity
+    private int getIndex(int hc) {
+        return (hc % capacity + capacity) % capacity; 
+    }
+    
+    /**
+     * Resizing the hash table if current {@code loadfactor} exceedes the {@code MAX_THREHOLD}
+     */
+    private void resize() {
+        int new_capacity = 2 * capacity;
+    
+        ArrayList<ArrayList<Entry<K, V>>> new_data = new ArrayList<>();
+        for(int i = 0; i < new_capacity; i++) {
+            new_data.add(new ArrayList<Entry<K, V>>());
+        }
+    
+        for(int i = 0; i < capacity; i++) {
+            for(Entry<K, V> entry: data.get(i)) {
+                int new_index = getIndex(entry.hashCode % new_capacity);
+                new_data.get(new_index).add(entry);
+            }
+        }
+        data = new_data;
+        capacity = new_capacity;
     }
     
 }
