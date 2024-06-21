@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "App",
+            "request": "launch",
+            "mainClass": "GuessingNum.App",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
             "name": "intro2",
             "request": "launch",
             "mainClass": "intro2",
