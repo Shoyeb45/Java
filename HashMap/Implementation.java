@@ -21,7 +21,7 @@ public class Implementation {
         mp.delKey("Stud3");
         mp.delKey("Stud2");
         System.out.println("Empty: " + mp.empty());
-        
+
         sc.close();
     
     }

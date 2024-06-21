@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Implementation",
+            "request": "launch",
+            "mainClass": "HashMap.Implementation",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "GuessingNum.App",
