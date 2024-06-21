@@ -124,6 +124,8 @@ public class HashMap<K, V> {
         for(int i = 0; i < data.get(idx).size(); i++) {
             if(data.get(idx).get(i).key == key) {
                 data.get(idx).remove(i);
+                sz--;
+                return;
             }
         }
         throw new NoSuchElementException("Key not found: " + key);
