@@ -5,7 +5,7 @@ import java.util.NoSuchElementException;
 
 
 /**
- * This is HashTable data structure . It uses generic data type and hashing function to convert given key into index of given capacity.
+ * This is Hash Map data structure . It uses generic data type and hashing function to convert given key into index of given capacity.
  * 
  * Separate chaining is used to minimize the colliding. It's implemented using {@code ArrayList} data structure.
  * 
@@ -16,11 +16,18 @@ import java.util.NoSuchElementException;
  * @author Shoyeb Ansari
  */
 public class HashMap<K, V> {
-    // Maximum size and Maximum Threshold for hashtable
+    /**
+     * Maximum size for hash map
+     */ 
     public static final int MAX_SIZE = 16;
+    /**
+     * Maximum Threshold for hash map
+     */
     public static final double MAX_THRESHOLD = 0.5;
 
-    // Entry class for storing key, value and hashcode of key.
+    /**
+     * Entry class for storing key, value and hashcode of key.
+     */
     @SuppressWarnings("hiding")
     private class Entry<K, V> {
         K key;
@@ -33,9 +40,21 @@ public class HashMap<K, V> {
         }
     }
     
-    private int sz;
-    private int capacity;
-    public ArrayList<ArrayList<Entry<K, V>>> data;
+    /**
+     * Fields
+     */
+    /**
+     * Current size
+     */
+    private int sz;   
+    /**
+     * Maximum capacity
+     */
+    private int capacity;   
+    /**
+     * For storing entries
+     */
+    public ArrayList<ArrayList<Entry<K, V>>> data;  
     
     /**
      * Public constructor to initialize hash map.
@@ -54,7 +73,7 @@ public class HashMap<K, V> {
     
     /**
      * Inserting Key and value into Hash Table.
-     * The average time complexity of inserting operation will be {@math O(1)} 
+     * The average time complexity of inserting operation will be O(1)
      * If the key is already present then it will update the value with new given value.<hr>
      * {@code HashMap<Integer, Integer> mp = new HashMap<>();        
      *        mp.insert(1, 12);  
@@ -82,6 +101,8 @@ public class HashMap<K, V> {
     
     /**
      * Get size of the hash map.
+     * @return
+     * size of hash map
      */
     public int size() {
         return sz;
@@ -93,17 +114,16 @@ public class HashMap<K, V> {
      * @returns
      * {@code true} if empty
      */
-    boolean empty() {
+    public boolean empty() {
         return (sz == 0);
     }
     
     /**
      * This will check wheter the key is already present in hash map or not.
-     * @param key
      * @return
      * {@code true}, if present
      */
-    boolean contains(K key) {
+    public boolean contains(K key) {
         int idx = getIndex(hash(key));
         for(int i = 0; i < data.get(i).size(); i++) {
             if(data.get(idx).get(i).key == key) {
@@ -115,11 +135,10 @@ public class HashMap<K, V> {
     
     /**
      * Deletes the particulatr  key from the hash  map.
-     * @param key
-     * @return 
+     * @return void
      * {@code NoSuchElementException} if key is not present.
      */
-    void delKey(K key) {
+    public void delKey(K key) {
         int idx = getIndex(hash(key));
         for(int i = 0; i < data.get(idx).size(); i++) {
             if(data.get(idx).get(i).key == key) {
@@ -134,10 +153,10 @@ public class HashMap<K, V> {
     /**
      * Getting the value of particular element by passing key as argument.
      * @param key
-     * @return
+     * @return value
      * {@code null} if key is not present, else it will return the value of that key.
      */
-    V get(K key) {
+    public V get(K key) {
         int idx = getIndex(hash(key));
         for(int i = 0; i < data.get(idx).size(); i++) {
             if(data.get(idx).get(i).key == key) {
@@ -147,12 +166,20 @@ public class HashMap<K, V> {
         return null;
     }
 
-    // Getting hash key
+    /**
+     * Getting hash key
+     * @param key
+     * @return hash code
+     */
     private int hash(K key) {
         return key.hashCode();
     }
     
-    // Get index for current capacity
+    /**
+     * Get index for current capacity
+     * @param hc
+     * @return Index
+     */
     private int getIndex(int hc) {
         return (hc % capacity + capacity) % capacity; 
     }
