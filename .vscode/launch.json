@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "HandlingLargeInteger",
+            "request": "launch",
+            "mainClass": "HandlingLargeInteger",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
             "name": "Implementation",
             "request": "launch",
             "mainClass": "HashMap.Implementation",
