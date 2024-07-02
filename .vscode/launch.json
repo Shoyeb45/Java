@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "RealNumber",
+            "request": "launch",
+            "mainClass": "RealNumber",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
             "name": "HandlingDecimalPrecision",
             "request": "launch",
             "mainClass": "HandlingDecimalPrecision",
