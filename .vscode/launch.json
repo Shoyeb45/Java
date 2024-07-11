@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MediumIncrementQuestion",
+            "request": "launch",
+            "mainClass": "MediumIncrementQuestion",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
+            "name": "UnicodeValues",
+            "request": "launch",
+            "mainClass": "UnicodeValues",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
             "name": "ASCIISymbols",
             "request": "launch",
             "mainClass": "ASCIISymbols",
