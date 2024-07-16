@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "SimpleDivision",
+            "request": "launch",
+            "mainClass": "SimpleDivision",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
             "name": "MediumIncrementQuestion",
             "request": "launch",
             "mainClass": "MediumIncrementQuestion",
