@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FactorialByBigDecimal",
+            "request": "launch",
+            "mainClass": "FactorialByBigDecimal",
+            "projectName": "Java_cd6e16aa"
+        },
+        {
+            "type": "java",
             "name": "SimpleDivision",
             "request": "launch",
             "mainClass": "SimpleDivision",
