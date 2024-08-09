@@ -5,8 +5,8 @@ public class Test {
         // System.out.println();
         // p.patter2(5);
         // System.out.println();
-        p.patter4(5);
+        // p.patter4(5);
 
-
+        p.patter6(10);
     }
 }
