@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "T",
+            "request": "launch",
+            "mainClass": "lineEquationApproachForPatternPrinting.T",
+            "projectName": "Java_d9bb640a"
+        },
+        {
+            "type": "java",
+            "name": "MyName",
+            "request": "launch",
+            "mainClass": "lineEquationApproachForPatternPrinting.MyName",
+            "projectName": "Java_d9bb640a"
+        },
+        {
+            "type": "java",
             "name": "Alphabet",
             "request": "launch",
             "mainClass": "lineEquationApproachForPatternPrinting.Alphabet",
