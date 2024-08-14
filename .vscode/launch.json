@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "WordToPattern",
+            "request": "launch",
+            "mainClass": "lineEquationApproachForPatternPrinting.WordToPattern",
+            "projectName": "Java_d9bb640a"
+        },
+        {
+            "type": "java",
             "name": "T",
             "request": "launch",
             "mainClass": "lineEquationApproachForPatternPrinting.T",
