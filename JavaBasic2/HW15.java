@@ -43,17 +43,25 @@ public class HW15 {
                 }
                 rowStart++; // for coming rounds (each time the cycle will repeat 1 will get added)
 
+                if(rowStart > rowEnd) {
+                    break;
+                }
                 // Second line,i.e., (i,m-1)
                 for (int i = rowStart; i <= rowEnd; i++) {
                     System.out.print(Matrix[i][colEnd] + " ");
                 }
                 colEnd--; // for coming rounds (Each time cycle will repeat 1 will get subtracted)
-
+                if(colStart > colEnd) {
+                    break;
+                }
                 // Third line i.e.,(n-1,j)
                 for (int j = colEnd; j >= colStart; j--) {
                     System.out.print(Matrix[rowEnd][j] + " ");
                 }
                 rowEnd--; // Same as above
+                if(rowStart > rowEnd) {
+                    break;
+                }
                 // Last Line i.e., (i,1)
                 for (int i = rowEnd; i >= rowStart; i--) {
                     System.out.print(Matrix[i][colStart] + " ");

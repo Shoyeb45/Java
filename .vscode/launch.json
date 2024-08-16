@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "HW15$Main",
+            "request": "launch",
+            "mainClass": "HW15$Main",
+            "projectName": "Java_d9bb640a"
+        },
+        {
+            "type": "java",
             "name": "hourGlass",
             "request": "launch",
             "mainClass": "lineEquationApproachForPatternPrinting.hourGlass",
