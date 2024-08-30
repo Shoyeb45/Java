@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ColorPicker?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane fx:id="myPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="482.0" prefWidth="675.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="colorpicker.Controller">
+   <children>
+      <ColorPicker fx:id="myColorPicker" layoutX="268.0" layoutY="229.0" onAction="#changeBackgroundColor" prefHeight="28.0" prefWidth="134.0" promptText="Pick A color" />
+   </children>
+</AnchorPane>
