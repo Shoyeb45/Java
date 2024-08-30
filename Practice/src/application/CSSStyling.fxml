@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="486.0" prefWidth="682.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Label fx:id="title1" layoutY="147.0" prefHeight="18.0" prefWidth="682.0" text="Java FX" />
+      <Label fx:id="title2" layoutY="263.0" prefHeight="18.0" prefWidth="682.0" text="Java is amazing programming langauge" />
+   </children>
+</AnchorPane>
