@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="578.0" prefWidth="719.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="keyevent.Controller">
+   <children>
+      <Circle fx:id="myCircle" fill="WHITE" layoutX="360.0" layoutY="262.0" radius="36.0" stroke="BLACK" strokeType="INSIDE" />
+   </children>
+</AnchorPane>
