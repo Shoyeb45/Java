@@ -1,7 +1,7 @@
 class Launch1 {
-	public static void main(String[] args) {
-		System.out.println("Launch1's method");
-	}
+        public static void main(String[] args) {
+                System.out.println("Launch1's method");
+        }
 
 }
 

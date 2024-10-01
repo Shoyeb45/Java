@@ -6,6 +6,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch",
+            "request": "launch",
+            "mainClass": "Launch",
+            "projectName": "Java_d9bb640a"
+        },
+        {
+            "type": "java",
+            "name": "WrapperClasses",
+            "request": "launch",
+            "mainClass": "WrapperClasses",
+            "projectName": "Java_d9bb640a"
+        },
+        {
+            "type": "java",
+            "name": "Client",
+            "request": "launch",
+            "mainClass": "Client",
+            "projectName": "Java_d9bb640a"
+        },
+        {
+            "type": "java",
+            "name": "Practice/VarKeyword",
+            "request": "launch",
+            "mainClass": "Practice/VarKeyword",
+            "projectName": "Java_d9bb640a"
+        },
+        {
+            "type": "java",
             "name": "HW15$Main",
             "request": "launch",
             "mainClass": "HW15$Main",
