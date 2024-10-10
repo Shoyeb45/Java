@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TwoDJaggedArray",
+            "request": "launch",
+            "mainClass": "array.TwoDJaggedArray",
+            "projectName": "Java_d9bb640a"
+        },
+        {
+            "type": "java",
+            "name": "Intro",
+            "request": "launch",
+            "mainClass": "array.Intro",
+            "projectName": "Java_d9bb640a"
+        },
+        {
+            "type": "java",
             "name": "Launch",
             "request": "launch",
             "mainClass": "Launch",
