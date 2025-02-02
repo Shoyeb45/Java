@@ -61,7 +61,7 @@ Examples :
 
 > Program - 1
 
-[Java Program](./encapsulation/BookExample1.java)
+- [Java Program](./encapsulation/BookExample1.java)
 <p align="center">
     <img src="./image/encapEx1.png">
     <p align="center">Program-1</p>
@@ -70,8 +70,95 @@ Examples :
 
 > Program - 2.a : Encapsulated dog class 
 
-[Java Program](./encapsulation/DogExample2.java)
+- [Java Program](./encapsulation/DogExample2.java)
+
 
 ```java
+class Dog {
+    private String breed;
+    private int age;
+    private float price;
 
+    // getter for breed
+    public String getBreed() {
+        // Validation
+        return breed;
+    }
+    
+    // Setter for dog
+    public void setBreed(String userBreed) {
+        // Validation
+        breed = userBreed;
+    }
+    
+    // getter for age
+    public int getAge() {
+        // Validation
+        return age;
+    }
+    
+    // Setter for age
+    public void setAge(int userAge) {
+        // Validation
+        age = userAge;
+    }
+    
+    // getter for price
+    public float getPrice() {
+        // Validation
+        return price;
+    }
+    
+    // Setter for price
+    public void setPrice(float userPrice) {
+        // Validation
+        price = userPrice;
+    }
+}
+
+public class DogExample2 {
+    public static void main(String[] args) {
+        Dog d = new Dog();
+        d.setAge(5);   
+        d.setBreed("");   
+        d.setPrice(123.4f);
+        System.out.println(d.getBreed());   
+        System.out.println(d.getAge());   
+        System.out.println(d.getPrice());   
+    }
+}
 ```
+
+### General Syntax of setters and getters 
+
+```java
+public void setXXX(T t) // Setter
+public T getXXX() // Getter
+```
+
+> Where , XXX is the name of tha data member , T -> data type of data member
+
+> Program - 2.B : Encapsulated dog class 
+
+- [Java Program](./encapsulation/DogExample3.java)
+
+
+<h2 align="center"> Shadowing Problem in Java </h2>
+
+- It is convention in java that withing a setter, the local variables should have the same name as that of the instance variables to improve the readability.
+- Because of this convention, a name clash occurs between the local variables and the instance variables.
+- Whenever there is a name clash between the 2 variables having the same name, the variable in the inner scope (local variables) will shadow the variable in the outer scope(instance variables). Hence the name class is referred to as the **Shadowing problem**
+
+> Program - 2.B : Encapsulated dog class 
+
+- [Java Program](./encapsulation/DogExample4.java)
+
+<p align="center">
+    <img src="./image/encapEx2B.png">
+    <p align="center">Program-2B</p>
+</p>
+
+<p align="center">
+    <img src="./image/memoryPr2B.png">
+    <p align="center">Memory Map for above Program</p>
+</p>
