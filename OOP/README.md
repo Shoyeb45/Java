@@ -145,7 +145,7 @@ public T getXXX() // Getter
 
 <h2 align="center"> Shadowing Problem in Java </h2>
 
-- It is convention in java that withing a setter, the local variables should have the same name as that of the instance variables to improve the readability.
+- It is convention in java that within a setter, the local variables should have the same name as that of the instance variables to improve the readability.
 - Because of this convention, a name clash occurs between the local variables and the instance variables.
 - Whenever there is a name clash between the 2 variables having the same name, the variable in the inner scope (local variables) will shadow the variable in the outer scope(instance variables). Hence the name class is referred to as the **Shadowing problem**
 
@@ -160,5 +160,80 @@ public T getXXX() // Getter
 
 <p align="center">
     <img src="./image/memoryPr2B.png">
+    <p align="center">Memory Map for above Program</p>
+</p>
+
+> NOTE : The shadowing problem can be resolved by making use of `this` keyword. 
+
+> Program - 2.C : Encapsulated dog class 
+
+- [Java Program](./encapsulation/DogExample5.java)
+
+<p align="center">
+    <img src="./image/encapEx2C.png">
+    <p align="center">Program-2C</p>
+</p>
+
+<p align="center">
+    <img src="./image/memoryPr2C.png">
+    <p align="center">Memory Map for above Program</p>
+</p>
+
+### <p align="center">Constructors in Java</p>
+
+- A constructor is a specialised setter which has the same names as that of the class.
+- A constructor does not return any value and hence it can not have a return type.
+- A constructor is invoked during the object creation.
+- A constructor is used to initialise the newly created object.
+
+
+Example Program:
+- [Java Program](./encapsulation/DogExample6.java)
+
+> The above program after compilation will look like:
+
+<p align="center">
+    <img src="./image/encapExCons1.png">
+    <p align="center">Constructor Program - 1</p>
+</p>
+
+<p align="center">
+    <img src="./image/memoryPrCons1.png">
+    <p align="center">Memory Map for above Program</p>
+</p>
+
+
+### <p align="center">Note : Object creation </p>
+
+<p align="center">
+    <img src="./image/ObjectCreation.png">
+</p>
+
+
+- The new operator does the following:
+    - Creates an object by allocating the memory
+    - Invokes the costructor
+    - Returns a reference to that object
+
+- The new operator requires a single argument: a call to a constructor. The name of the constructor provides the name of the class to instantiate
+
+- All classes have atleast one costructor
+- If a class does not explicitly declare any constructor then the java compiler automatically provide a no constructor called as the default constructor (Zero-parametrized constructor)
+
+- The default constructor will call the no-argument constructor of the super class using the `super()` call.
+
+Example : 
+
+- [Java Program](./encapsulation/DogExample7.java)
+
+The above program after compiled:
+
+<p align="center">
+    <img src="./image/encapExCons2.png">
+    <p align="center">Constructor Program - 2</p>
+</p>
+
+<p align="center">
+    <img src="./image/memoryPrCons2.png">
     <p align="center">Memory Map for above Program</p>
 </p>
