@@ -301,11 +301,30 @@ Example-5:
     <p align="center">Memory Map for above Program</p>
 </p>
 
+Example-6:
 
-```mermaid
-graph TD;
-    A-->B;
-    A-->C;
-    B-->D;
-    C-->D;
-```
+- [Java Program](./encapsulation/DogExample11.java)
+
+<p align="center">
+    <img src="./image/encapExCons6.png">
+    <p align="center">Constructor Program - 5</p>
+</p>
+
+<p align="center">
+    <img src="./image/memoryPrCons6.png" width="550px">
+    <p align="center">Memory Map for above Program</p>
+</p>
+
+
+> Difference between constructor and methods:
+
+|Sr|Constructor| Methods|
+|--|-----------|--------|
+|1. | A constructor is used to initialise an object. | A method is used to exhibit functionality (behaviour) of an object.|
+|2. | Constructors are invoked implicitly by the new operator. | Methods are invoked explicitly by the programmer. |
+|3. | Constructor does not return any value. | A method may or may not return a value.|
+|4. | Constructor cannot have a return type. | A method must have a return type.|
+|5. | In case if a constructor is not present, a default constructor is provided by java compiler. | In case of methods no default method is provided.|
+|6. | The constructor should have the same name as that of the class. | A method can have any name.|
+|7. | The first statement within a constructor must always be `super()` or `this()`| The first statement within a method can be anything|
+|8. | Constructors can't be inherited. | Non-private methods can be inherited. |
