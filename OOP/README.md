@@ -159,7 +159,7 @@ public T getXXX() // Getter
 </p>
 
 <p align="center">
-    <img src="./image/memoryPr2B.png">
+    <img src="./image/memoryPr2b.png">
     <p align="center">Memory Map for above Program</p>
 </p>
 
@@ -179,7 +179,7 @@ public T getXXX() // Getter
     <p align="center">Memory Map for above Program</p>
 </p>
 
-### <p align="center">Constructors in Java</p>
+## <p align="center">Constructors in Java</p>
 
 - A constructor is a specialised setter which has the same names as that of the class.
 - A constructor does not return any value and hence it can not have a return type.
@@ -282,6 +282,6 @@ Example-5:
 </p>
 
 <p align="center">
-    <img src="./image/memoryPrCons5.png">
+    <img src="./image/memoryPrCons5.png" width="550px">
     <p align="center">Memory Map for above Program</p>
 </p>
