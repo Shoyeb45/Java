@@ -187,7 +187,7 @@ public T getXXX() // Getter
 - A constructor is used to initialise the newly created object.
 
 
-Example Program:
+Example - 1:
 - [Java Program](./encapsulation/DogExample6.java)
 
 > The above program after compilation will look like:
@@ -218,11 +218,11 @@ Example Program:
 - The new operator requires a single argument: a call to a constructor. The name of the constructor provides the name of the class to instantiate
 
 - All classes have atleast one costructor
-- If a class does not explicitly declare any constructor then the java compiler automatically provide a no constructor called as the default constructor (Zero-parametrized constructor)
+- If a class does not explicitly declare any constructor then the java compiler automatically provide a no argument constructor called as the default constructor (Zero-parametrized constructor)
 
 - The default constructor will call the no-argument constructor of the super class using the `super()` call.
 
-Example : 
+Example 2: 
 
 - [Java Program](./encapsulation/DogExample7.java)
 
@@ -235,5 +235,53 @@ The above program after compiled:
 
 <p align="center">
     <img src="./image/memoryPrCons2.png">
+    <p align="center">Memory Map for above Program</p>
+</p>
+
+
+Example 3: 
+
+- [Java Program](./encapsulation/DogExample8.java)
+
+The above program after compiled:
+
+<p align="center">
+    <img src="./image/encapExCons3.png">
+    <p align="center">Constructor Program - 3</p>
+</p>
+
+
+Important Points : 
+
+1. If a class contain atleast one constructor then java compiler will not define the constructor.
+2. Hence to overcome the above error we have to explicitly provide zero parametrized constructor.
+3. The process of creating multiple constructor with diffrent parameter within the same class is called constructor overloading.
+
+
+Example 4: 
+
+- [Java Program](./encapsulation/DogExample9.java)
+<p align="center">
+    <img src="./image/encapExCons4.png">
+    <p align="center">Constructor Program - 4</p>
+</p>
+
+<p align="center">
+    <img src="./image/memoryPrCons4.png">
+    <p align="center">Memory Map for above Program</p>
+</p>
+
+### Constructor Chaining
+
+Example-5:
+- [Java Program](./encapsulation/DogExample10.java)
+
+<p align="center">
+    <img src="./image/encapExCons5.png">
+    <p align="center">Constructor Program - 5</p>
+</p>
+
+<p align="center">
+    <img src="./image/memoryPrCons5.png">
     <p align="center">Memory Map for above Program</p>
 </p>

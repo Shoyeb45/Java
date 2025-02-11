@@ -1,28 +1,17 @@
-class Dog extends Object {
+class Dog {
     private String breed;
     private int age;
     private float price;
 
-    // Constructor
-    public Dog() {
-
-        super();
-    }   
-
-    // getter for breed
     public String getBreed() {
-        // Validation
         return breed;
     }
     
-    // Setter for dog
     public float getPrice() {
         return price;
     }
     
-    // getter for age
     public int getAge() {
-        // Validation
         return age;
     }
 }
