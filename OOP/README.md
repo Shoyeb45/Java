@@ -271,7 +271,22 @@ Example 4:
     <p align="center">Memory Map for above Program</p>
 </p>
 
+- Types of constructor
+1. Default constructor
+2. No arg constructor (zero parametrized constructor)
+3. Parameterized constructor
+
 ### Constructor Chaining
+
+- The process of one constructor calling another constructor is called as **constructor chaining**.
+- Constructor chaining can be done in 2 ways:
+1. Within the same calss : It can be achieved using `this()`.
+2. Between the subclass and the super class : It can be achieved by using `super()`
+
+- The first line withing a constructor can be either `super()` constrictor call or `this()` constructor call. This ensures the parent class object is in proper state before referring ti within the child class constructor.
+- If there is no explicit call to `super()` or `this()`, the java compiler automatically inserts a call to `super()`.
+- There must exist atleast one constructor that does not use `this()` to avoid recursive constructor calls.
+- `this()` or `super()` should always be the first statement inside a constructor.
 
 Example-5:
 - [Java Program](./encapsulation/DogExample10.java)
@@ -285,3 +300,12 @@ Example-5:
     <img src="./image/memoryPrCons5.png" width="550px">
     <p align="center">Memory Map for above Program</p>
 </p>
+
+
+```mermaid
+graph TD;
+    A-->B;
+    A-->C;
+    B-->D;
+    C-->D;
+```
