@@ -69,8 +69,17 @@ Ex : 1 -> [Java Code](./Example/StaticExample1.java)
     <img src="./image/StaticMemoryEx1-1.png" width="670px">
     <img src="./image/StaticMemoryEx1-2.png" width="820px" align="center">
     <p align="center"> Memory Map</p>
-
 </p>
+
+Ouput:
+```
+Inside static block
+Inside main()
+Inside static method-disp1()
+a 100
+b 200
+c 300
+```
 
 
 ### Instance Control Flow
