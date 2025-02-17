@@ -9,7 +9,7 @@
 
 
 <p align="center">
-    <img src="./public/image/static1.png">
+    <img src=".//image/static1.png">
 </p>
 
 
@@ -41,7 +41,7 @@ Classloader subsystem performs 3 activities:
 
 
 <p>
-    <img src="./public/image/static-jvm-str.png">
+    <img src="./image/static-jvm-str.png">
     <p align="center">Detailed Architecture of JVM</p>
 </p>
 
@@ -59,4 +59,27 @@ Classloader subsystem performs 3 activities:
 2. JIT Compiler : It computes the hotspot bytecode to MLL code
 3. Garbage Collector: It collects and removes unreferenced objects.
 
-### Example program and execution
+Examples :
+### Static Control flow
+
+Ex : 1 -> [Java Code](./Example/StaticExample1.java)
+<p>
+    <img src="./image/StaticFlowEx1.png" >
+    <p align="center"> Static Control flow</p>
+    <img src="./image/StaticMemoryEx1-1.png" width="670px">
+    <img src="./image/StaticMemoryEx1-2.png" width="820px" align="center">
+    <p align="center"> Memory Map</p>
+
+</p>
+
+
+### Instance Control Flow
+Ex : 1 -> [Java Code](./Example/StaticExample2.java)
+<p>
+    <img src="./image/StaticFlowEx1.png" >
+    <p align="center"> Static Control flow</p>
+    <img src="./image/StaticMemoryEx1-1.png" width="670px">
+    <img src="./image/StaticMemoryEx1-2.png" width="820px" align="center">
+    <p align="center"> Memory Map</p>
+
+</p>
