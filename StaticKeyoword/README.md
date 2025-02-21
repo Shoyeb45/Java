@@ -66,7 +66,7 @@ Ex : 1 -> [Java Code](./Example/StaticExample1.java)
 <p>
     <img src="./image/StaticFlowEx1.png" >
     <p align="center"> Static Control flow</p>
-    <img src="./image/StaticMemoryEx1-1.png" width="670px">
+    <img src="./image/StaticMemoryEx1-1.png" width="655px">
     <img src="./image/StaticMemoryEx1-2.png" width="820px" align="center">
     <p align="center"> Memory Map</p>
 </p>
@@ -83,12 +83,80 @@ c 300
 
 
 ### Instance Control Flow
-Ex : 1 -> [Java Code](./Example/StaticExample2.java)
+Ex : 2 -> [Java Code](./Example/StaticExample2.java)
 <p>
-    <img src="./image/StaticFlowEx1.png" >
+    <img src="./image/StaticFlowEx2.png" >
     <p align="center"> Static Control flow</p>
-    <img src="./image/StaticMemoryEx1-1.png" width="670px">
-    <img src="./image/StaticMemoryEx1-2.png" width="820px" align="center">
+    <img src="./image/StaticMemoryEx2-1.png" width="670px">
+    <img src="./image/StaticMemoryEx2-2.png" width="820px" align="center">
     <p align="center"> Memory Map</p>
 
 </p>
+
+
+### Accessibility Rule
+
+Ex: 3 -> [Java Code](./Example/StaticExample3.java)
+
+<p>
+    <img src="./image/staticFlowEx-3.png">
+    <p align="center">Compilation Error</p>
+    <p>NOTE : Byte code will not be generated as there are error in the program. Below diagram is only for explanation purpose</p>
+    <img src="./image/StaticMemoryEx3-1.png" width="670px">
+    <p align="center">
+        <img src="./image/StaticMemoryEx3-2.png" width="520px">
+    </p>
+    <p align="center"> Memory Map</p>
+
+</p>
+
+### Need of main method
+
+Ex: 4 -> [Java Code](./Example/StaticExample4.java)
+
+<p>
+    <img src="./image/Ex4mainMethod.png">
+</p>
+
+### Class Loading Mechanism
+
+Ex: 5 -> [Java Code](./Example/StaticExample5.java)
+
+Output:
+```
+
+```
+<p>
+    <img src="./image/Ex5execFlow.png">
+</p>
+
+<p>
+    <img src="./image/StaticMemoryEx5.png">
+</p>
+
+
+### Non-static block vs Constructor
+
+<p>
+    <img src="./image/non-staticBlockandConstructor.png">
+</p>
+
+> Question : 1 -> Count the number of objects the user have created of particular class?
+
+Solution: [Java code](./Example/Question1.java)  
+
+### Application of static members
+
+
+Application of static members -> [Java Code](./Example/FarmerApp.java)
+
+<p>
+    <img src="./image/farmerExecutionFlow.png">
+    <p align="center">Execution flow and class loading of farmer app</p>
+</p>
+<p>
+    <img src="./image/farmerMemory.png">
+    <p align="center">FarmerApp Memory</p>
+</p>
+
+
