@@ -4,6 +4,8 @@
     <img src="./image/pillersofoop.png">
 </p>
 
+# Encapsulation
+
 ## Data Encapsulation in Java
 
 - Encapsulation referes to the process of providing security to the most important component of an object
