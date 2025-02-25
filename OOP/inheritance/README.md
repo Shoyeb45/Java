@@ -178,7 +178,7 @@ Access Levels
 NOTE:
 
 <p>
-    <img src="./image/hierarchlevelofAM.png">
+    <img src="./image/levelofAM.png">
     <i align="center">Access Modifiers in java</i>
 </p>
 
