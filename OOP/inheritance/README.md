@@ -245,5 +245,56 @@ from java-5 :
 ```java
 import static java.util.Math.*;  // All static members from math class are imported
 ```
+
 - [Example code, static import of Math class methods](./example/ImportStatement2.java)
 
+
+
+## Types of methods in inheritance
+
+<p>
+    <img src="./image/methodTypesInInheritance.png">
+    <i align="center">Access Modifiers in java</i>
+</p>
+
+- In the context of inheritance, we can categorize the method into 3 categories:
+#### 1. Inherited Methods 
+- There are such methods which have been inherited from the parent class and used as it is.
+
+Advantage: Code Reusability
+
+#### 2. Overridden Methods 
+- There are such methods which have been inherited from the parent class and modified to suit the expectations of the child class.
+
+Advantage: Can change the behaviour according to the expectation of the child class.
+
+#### 3. Specialised Methods
+- THere are such method which are present only in the child class and not in the parent class.
+
+Advantage: Enhances the features & functionalitits of the child class.
+
+#### Example PlaneApp
+
+<p>
+    <img src="./image/planeAppUML.png">
+    <p align="center">UML Diagram of PlaneApp</p>
+</p>
+
+[Java Program for planeApp](./example/PlaneApp.java)
+
+Output:
+
+```text
+Plane is taking offf...
+Cargo Plane is flying at lower heights..
+Cargo plane is carrying goods...
+Plane is landing...
+Plane is taking offf...
+Passenger Plane is flying at medium heights..
+Passenger plane is carrying passengers...
+Plane is landing...
+Plane is taking offf...
+Fighter Plane is flying at higher heights..
+Fighter plane is carrying weapons...
+Plane is landing...
+```
