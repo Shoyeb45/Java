@@ -1,5 +1,17 @@
 {
     "files.associations": {
         "vector": "cpp"
-    }
+    },
+    "java.project.sourcePaths": [
+        "pattern",
+        "ThreadingInJava",
+        "Recursion",
+        "OOP/encapsulation",
+        "OOP",
+        "MethodOverloading",
+        "JavaBasic3",
+        "JavaBasic2",
+        "JavaBasic1",
+        ""
+    ]
 }

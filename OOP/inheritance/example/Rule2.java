@@ -18,7 +18,7 @@ class Demo3 extends Demo2 {
         System.out.println("Work is worship");
     }
 }
-public class Example2 {
+public class Rule2 {
     public static void main(String[] args) {
         Demo3 d3 = new Demo3();
         d3.disp1();

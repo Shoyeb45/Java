@@ -12,7 +12,7 @@ class Demo2 extends Demo1 {
     }
 }
 
-public class Example1 {
+public class Rule1 {
     public static void main(String[] args) {
         Demo2 d2 = new Demo2();
 
