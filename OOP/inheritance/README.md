@@ -238,4 +238,12 @@ NOTE:
 
 - With the help of static import, we can access the static member of a class directly without using class name or any object
 
-[]
+- [Example code, using Math class methods](./example/ImportStatement.java)
+
+
+from java-5 :
+```java
+import static java.util.Math.*;  // All static members from math class are imported
+```
+- [Example code, static import of Math class methods](./example/ImportStatement2.java)
+
