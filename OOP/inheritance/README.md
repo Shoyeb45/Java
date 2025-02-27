@@ -152,7 +152,7 @@ Access Modifiers:
 
 Access Levels 
 
-|**Access Modifiers** | **With the same class** | **Outside the class but in the same package** | **Outside the package but in the related classed** | **Outside the package & in  unrelated classes** |
+|**Access Modifiers** | **With the same class** | **Outside the class but in the same package** | **Outside the package but in the related class** | **Outside the package & in  unrelated classes** |
 |---|-|-|-|-|
 |*public*| Yes| Yes| Yes| Yes|
 |*protected*| Yes| Yes| Yes| No|
@@ -179,7 +179,7 @@ NOTE:
 
 <p>
     <img src="./image/levelofAM.png">
-    <i align="center">Access Modifiers in java</i>
+    <p align="center">Access Modifiers in java</p>
 </p>
 
 There are two level of access modifiers:
@@ -203,7 +203,7 @@ Ex. : package com.flipkart;
 
 ### `import` statement in java
 
-- The `import` keyword is used to imoprt in-built and user definbed packages.
+- The `import` keyword is used to imoprt in-built and user defined packages.
 
 ### Accessing package members
 
@@ -231,10 +231,10 @@ ArrayList al = new ArrayList();
 NOTE: 
 > The statement `import java.*`, it will only import the members of "java" package and not the members if its sub-packages(util, math, etc)
 
-- `java.lang` package contains classes that are fundamenta to the design of java. Hence it is by default imported in every java program
+- `java.lang` package contains classes that are fundamental to the design of java. Hence it is by default imported in every java program
 
 
-### static import statement in java
+### `static` import statement in java
 
 - With the help of static import, we can access the static member of a class directly without using class name or any object
 
@@ -269,7 +269,7 @@ Advantage: Code Reusability
 Advantage: Can change the behaviour according to the expectation of the child class.
 
 #### 3. Specialised Methods
-- THere are such method which are present only in the child class and not in the parent class.
+- There are such method which are present only in the child class and not in the parent class.
 
 Advantage: Enhances the features & functionalitits of the child class.
 
@@ -297,4 +297,105 @@ Plane is taking offf...
 Fighter Plane is flying at higher heights..
 Fighter plane is carrying weapons...
 Plane is landing...
+```
+
+#### Example Animal App
+
+
+<p>
+    <img src="./image/AnimalAppUML.png">
+    <p align="center">UML Diagram of Animal App</p>
+</p>
+
+[Java Program for Animal App](./example/AnimalApp.java)
+
+Output:
+
+```text
+Animal is breathing...
+Deer grazes and eats grass...
+Deers are herbivores
+Animal is sleeping...
+Animal is breathing...
+Tigers hunts and eats...
+Tigers are carnivores
+Animal is sleeping...
+Animal is breathing...
+Monkey snatches and eats...
+Monkeys are omnivores
+Animal is sleeping...
+```
+
+
+### Method Overriding in java
+- Method *overriding* allows a child class to reimplement a method which is inhertied which is inherited from parent class. 
+
+Example :
+
+<p>
+    <img src="./image/MOEx1.png">
+    <p align="center">Method Overriding example of String and Mutable string classes</p>
+</p>
+
+#### Rules of method overriding
+
+**Rule : 1**
+- Access level of the overridden method in the child class cannot tbe more restrictive. In other words, the child class overridden method must retains the same access modifier as that of the parent class of method. Howerver, it's possible to change the access modifier of the overridden method in the child class provided it is less restrictive.
+
+Ex. : 
+
+<p>
+    <img src="./image/MORule1.png">
+</p>
+
+
+**Rule : 2**
+- i. Return type of the overridden method cannot be changed *(primitive return type)*
+
+
+<p>
+    <img src="./image/MORule2-1.png">
+</p>
+
+
+- ii. However, it is possible to change the return type provided. They are co-variant return types
+<p>
+    <img src="./image/MORule2-2.png">
+</p>
+
+NOTE : Covariant Return types
+> It is possible to have different return type for overriding method in the child class provided overridden method and return type should be a sub-type of parent class method's return type.
+
+> In this way, overriding method becomes variant with respect to return type. This way possible from JDK 1.5 onwards 
+
+
+**Rule : 3**
+
+- The argument list should be exactly the same as that of the parent class method
+
+<p>
+    <img src="./image/MORule3.png">
+</p>
+
+
+**Rule : 4**
+- Private members cannot be overridden as they don't participate in inheritance
+
+```java
+
+class Animal {
+
+    private void eat() {
+        System.out.println("Animal is eating");
+    }
+}
+
+class Moneky extends Animal {
+
+    public void eat() { // Specialised method of monkey class
+
+        System.out.println("Monkey steals and eats");
+    }
+}
+        
 ```
