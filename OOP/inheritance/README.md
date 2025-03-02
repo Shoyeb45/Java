@@ -328,7 +328,7 @@ Animal is sleeping...
 
 
 ### Method Overriding in java
-- Method *overriding* allows a child class to reimplement a method which is inhertied which is inherited from parent class. 
+- Method *overriding* allows a child class to reimplement a method which is inhertied a from parent class. 
 
 Example :
 
@@ -384,14 +384,14 @@ NOTE : Covariant Return types
 ```java
 
 class Animal {
-
+    
     private void eat() {
         System.out.println("Animal is eating");
     }
 }
 
 class Moneky extends Animal {
-
+    
     public void eat() { // Specialised method of monkey class
 
         System.out.println("Monkey steals and eats");
@@ -399,3 +399,32 @@ class Moneky extends Animal {
 }
         
 ```
+
+
+### Difference between method overloading and method overriding
+
+| Sr No |Method Overloading | Method Overriding | 
+|-|-|-|
+| 1. | Methods have the same name but with different paremeters. | Methods have the same name with same parameters.|
+| 2. | It occurs in the same class. | Occurs between parent and child class. |
+| 3. | Return types can be same or different. | Return types must be same or co-variant. |
+| 4. | Facilitates ease of use. | Facilitates specific implementation for child classes. |
+| 5. | Promotes compile-time polymorphism | Promotes runtime polymorphism. |
+| 6. | Comparatively high in performance. | Compartively low in performance. |
+| 7. | Static methods can be overloaded.  | Static methods cannot be overridden. | 
+
+
+## Constructors execution in inheritance 
+
+#### Case-1 : Whenever a child class object is created, the parent class constructor will be executed first followed by the child class constructor because of the `super()`.
+
+[Example code](./example/ConsExecutionCase1.java)
+
+<p>
+    <img src="./image/ConsExeCase1.png">
+    <p align="center"> Memory Map and Flow of execution </p>
+</p>
+
+
+
+
