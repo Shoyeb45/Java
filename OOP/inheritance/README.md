@@ -425,6 +425,23 @@ class Moneky extends Animal {
     <p align="center"> Memory Map and Flow of execution </p>
 </p>
 
+#### Case-2
+
+[Example code](./example/ConsExecutionCase2.java)
+
+<p>
+    <img src="./image/ConsExeCase2.png">
+    <p align="center"> Memory Map and Flow of execution </p>
+</p>
+
+#### Case-3
+
+[Example code](./example/ConsExecutionCase3.java)
+
+<p>
+    <img src="./image/ConsExeCase3.png">
+    <p align="center"> Memory Map and Flow of execution </p>
+</p>
 
 
 
