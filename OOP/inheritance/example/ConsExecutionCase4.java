@@ -26,9 +26,9 @@ class Demo2 extends Demo1 {
 
     public Demo2(int m, int n) {
         // Parameterized constructor will be added by the user
-        super(m, n);
         c = m;
         d = n;
+        // super(m, n); // Compilation error 
     }
 
     public void display() {
@@ -38,10 +38,11 @@ class Demo2 extends Demo1 {
         System.out.println(d);
     }
 }
-
-public class ConsExecutionCase3 {
+public class ConsExecutionCase4 {
     public static void main(String[] args) {
-        Demo2 d2 = new Demo2(200, 100);
+        Demo2 d2 = new Demo2(1, 4);
         d2.display();
     }
 }
+
+

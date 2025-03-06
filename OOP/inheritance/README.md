@@ -444,4 +444,51 @@ class Moneky extends Animal {
 </p>
 
 
+#### Case-4 : `super()` or `this()` must always be the first statement within a constructor. This prevents accesing uninitialized parent members.
 
+
+[Example code](./example/ConsExecutionCase4.java)
+
+<p>
+    <img src="./image/ConsExeCase4.png">
+    <p align="center"> Memory Map and Flow of execution </p>
+</p>
+
+#### Case-5 : 
+
+
+[Example code](./example/ConsExecutionCase5.java)
+
+<p>
+    <img src="./image/ConsExeCase5.png">
+    <p align="center"> Memory Map and Flow of execution </p>
+</p>
+
+### Special cases of `this` and `super` keyword
+
+[Codes in this folder](./example/special_cases_of_super_and_this)
+
+- Variable hiding occurs when a child class defines a variable with the same name as its parent, preventing direct access to the parent's variable unless accessed via super. Variable resolution is based on the reference type at compile-time.
+<p>
+    <img src="./image/specialCaseOfThisSuper.png">
+</p>
+
+## Static Inheritance
+
+1. Ex1: 
+
+[Example code](./example/static_inheritance/Ex1.java)
+
+<p>
+    <img src="./image/StaticInheritanceEx1.png">
+</p>
+
+Output:
+
+```text
+0
+Parent 1st static block
+Parent 2nd static block
+Parent main()
+200
+```
