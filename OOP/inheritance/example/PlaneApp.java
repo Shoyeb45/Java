@@ -1,4 +1,4 @@
-// package inheritance.example;
+package inheritance.example;
 
 class Plane {
     public void takeOff() {

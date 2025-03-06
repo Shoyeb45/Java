@@ -1,4 +1,4 @@
-// package inheritance.example;
+package inheritance.example;
 
 public class ImportStatement {
     public static void main(String[] args) {

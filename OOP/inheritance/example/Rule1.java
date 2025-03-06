@@ -1,4 +1,4 @@
-// package inheritance.example;
+package inheritance.example;
 
 class Demo1 {
     void disp1() {

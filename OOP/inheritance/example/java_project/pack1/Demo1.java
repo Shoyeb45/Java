@@ -1,4 +1,4 @@
-package pack1;
+package inheritance.example.java_project.pack1;
 
 public class Demo1 {
     public int a = 10;
@@ -14,7 +14,7 @@ class Demo2 extends Demo1 {
         System.out.println(a);
         System.out.println(b);
         System.out.println(c);
-        System.out.println(d);
+        // System.out.println(d);
     }
 }
 

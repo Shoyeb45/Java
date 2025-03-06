@@ -1,4 +1,4 @@
-// package inheritance.example;
+package inheritance.example;
 
 class Animal {
     public void eat() {

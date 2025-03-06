@@ -1,4 +1,4 @@
-package pack2;
+package inheritance.example.java_project.pack2;
 import  pack1.*;
 
 public class Demo3 extends Demo1 {

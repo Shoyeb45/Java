@@ -1,4 +1,4 @@
-// package inheritance.example.static_inheritance;
+package inheritance.example.static_inheritance;
 
 public class Ex1 {
     static int i = 100;
