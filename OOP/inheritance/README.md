@@ -579,3 +579,36 @@ Within a static context, if an object is created then the instance control flow 
 1. Memory allocation with default values for instance variables
 2. Instance varible assignments and instance blocks execution sequentially
 3. Execution of constructors
+
+
+3. Ex: 3
+
+[Example code](./example/instance_inheritance/Ex3.java)
+
+<p>
+    <img src="./image/InstanceInheEx3.png">
+</p>
+
+
+Output: 
+
+```text
+Child Main
+0
+Parent 1st instance block
+Parent 2nd instance block
+Parent Constructor
+0
+Child 1st instance block
+Child 2nd instance block
+Child Constructor
+Execution back to main()
+```
+
+Steps : 
+
+1. Memory allocation for instance variables with default values from parent to child.
+2. Instance variable assignment and instance block execution sequentially only for parent class.
+3. Executoin of parent constructor.
+4. Instance variable assignment and instance block execution sequentially only for child class.
+5. Executino of child constructors.  
