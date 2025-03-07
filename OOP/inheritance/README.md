@@ -492,3 +492,90 @@ Parent 2nd static block
 Parent main()
 200
 ```
+
+2. Ex2: 
+
+[Example code](./example/static_inheritance/Ex2.java)
+
+
+<p>
+    <img src="./image/StaticInheritanceEx2.png">
+</p>
+
+Output:
+
+```text
+0
+Parent 1st static block
+Parent 2nd static block
+200
+Child 1st static block
+Child 2nd static block
+Child Main
+20
+```
+
+1. First `Parent` class will be loaded in class loader. 
+1. Memory allocation with default values for static variables of `Parent` class.
+2. Static variables assignments and static blocks execution sequentially of `Parent`class.
+3. Then `Child` class will be loaded in class loader.
+1. Memory allocation with default values for static variables of `Child` class.
+2. Static variables assignments and static blocks execution sequentially of `Child`class.
+5. Main method execution
+
+NOTE: If the execution is done as `java Parent` then only the Parent class static members will be executed. (output will be same as example-1)
+
+## Instance Inheritance 
+
+1. Ex: 1
+
+[Example code](./example/instance_inheritance/Ex1.java)
+
+<p>
+    <img src="./image/InstanceInheEx1.png">
+</p>
+
+
+```text
+Parent main()
+0
+Parent 1st instance block
+Parent Constructor
+```
+
+Steps : 
+
+Within a static context, if an object is created then the instance control flow sets in as :
+
+1. Memory allocation with default values for instance variables
+2. Instance varible assignments and instance blocks execution sequentially
+3. Execution of constructors
+
+
+2. Ex: 2
+
+[Example code](./example/instance_inheritance/Ex2.java)
+
+<p>
+    <img src="./image/InstanceInheEx2.png">
+</p>
+
+
+```text
+0
+Parent 1st static block
+Parent 2nd static block
+200
+Child 1st static block
+Child 2nd static block
+Child Main
+20
+```
+
+Steps : 
+
+Within a static context, if an object is created then the instance control flow sets in as :
+
+1. Memory allocation with default values for instance variables
+2. Instance varible assignments and instance blocks execution sequentially
+3. Execution of constructors
