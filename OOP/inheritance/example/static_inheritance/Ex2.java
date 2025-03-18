@@ -1,4 +1,4 @@
-// package inheritance.example.static_inheritance;
+package inheritance.example.static_inheritance;
 
 
 class Parent {

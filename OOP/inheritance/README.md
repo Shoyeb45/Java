@@ -750,7 +750,7 @@ A sealed class :
 
 Example:
 
-[Sealed class example](./example/SealedClassEx.java)
+> [Sealed class example](./example/SealedClassEx.java)
 
 Using keyword in subclass:
 
@@ -763,7 +763,7 @@ Using keyword in subclass:
 # "Has-a" Relationship In Java  
 - Most commanly used relationship
 
-- As a part of an application development, we have to use few entities (classes) as per our application requirement/
+- As a part of an application development, we have to use few entities (classes) as per our application requirement.
 
 - These classes can be used by using two types of relationships:
     1. "Is-a" relationship (achieved through `extends` keyword)
@@ -793,7 +793,7 @@ Using keyword in subclass:
 
 ##### Conventional 'has-a' example
 
-[Example code](./example/association/ConventionExample.java)
+> [Convention Example Code](./example/association/ConventionExample.java)
 
 <p>
     <img src="./image/association/associationConventionEx.png">
@@ -801,7 +801,7 @@ Using keyword in subclass:
 
 ##### Standard 'has-a' example
 
-[Example code](./example/association/StandardExample.java)
+> [Standard Example Code](./example/association/StandardExample.java)
 
 Address -> Depenedent class
 
@@ -838,17 +838,17 @@ Student -> Target class
 
 ### One-to-One association using constructor injection 
 
-- It is a relationship between two entities wherein one object of one entity is mapped to one object of another entity.
+- It is a relationship between two entities where in one object of one entity is mapped to one object of another entity.
 
 <p>
     <img src="./image/association/1to1ExUML.png">
 </p>
 
-[Java Code for One to One Constructor Injection](./example/association/OneToOneConstructor.java)
+> [Java Code for One to One Constructor Injection](./example/association/OneToOneConstructor.java)
 
 ### One-to-One association using setter injection 
 
-[Java Code One to One Setter Injection](./example/association/OneToOneSetter.java)
+> [Java Code One to One Setter Injection](./example/association/OneToOneSetter.java)
 
 
 > When to use constructor injection and setter injection
@@ -877,9 +877,10 @@ Student -> Target class
 
 <p>
     <img src="./image/association/oneToManyMemoryDia.png">
+    <p align="center">Memory diagram</p>
 </p>
 
-[Java Code One to Many Association](./example/association/OneToManyEx.java)
+> [Java Code One to Many Association](./example/association/OneToManyEx.java)
 
 ## Many-to-One Association
 
@@ -891,7 +892,70 @@ Student -> Target class
 
 <p>
     <img src="./image/association/manyToOneMemoryDia.png">
+    <p align="center">Memory diagram</p>
 </p>
 
 
-[Java Code Many to One Association](./example/association/ManyToOneEx.java)
+> [Java Code Many to One Association](./example/association/ManyToOneEx.java)
+
+## Many-to-Many Association 
+
+- It is a relationship between and entities where many objects of one entity are mapped to mamy objects of another entity.
+
+<p>
+    <img src="./image/association/manyToManyUML.png">
+</p>
+
+<p>
+    <img src="./image/association/manyToManyMemoryDia.png">
+    <p align="center">Memory diagram</p>
+</p>
+
+
+> [Java Code Many to Many Association](./example/association/ManyToManyExample.java)
+
+
+## Aggregation and Composition
+
+<p>
+    <img src="./image/association/typesOfAssoBasesOnStrength.png">
+    <p align="center">Types of Association</p>
+</p>
+
+### Example - 1
+
+<p>
+    <img src="./image/association/AssociationExStrength.png">
+    <p align="center">UML</p>
+</p>
+
+> [Java Code of Strength Based Association - 1](./example/association/AssociationExampleBasedOnStrength.java)
+
+<p>
+    <img src="./image/association/associationMemoryDia1.png">
+    <p align="center">Memory diagram</p>
+</p>
+
+### Example - 2
+
+<p>
+    <img src="./image/association/associationExample2UML.png">
+    <p align="center">UML</p>
+</p>
+
+> [Java Code of Strength Based Association - 2](./example/association/AssociationStrengthEx2.java)
+
+<p>
+    <img src="./image/association/associationStrengthEx2.png">
+    <p align="center">Memory diagram</p>
+</p>
+
+
+## Real time example of Inheritance
+
+NOTE:
+
+- Composition is a <u>tight bound</u> `has-a` relationship (Strong association).
+- Aggregation is a <u>loose bound</u> `has-a` relationship (Weak association).
+- Tight bound "has-a" relationship is when the <u>enclosing object</u> is inaccessible(destroyed) even the <u>contained object remains accessible</u>.
+- Loose bound "has-a" relationship is when even if the <u>enclosing object</u>. is <u>inaccessible</u>(destroyed) still the <u>contained object remains accessible</u>.
