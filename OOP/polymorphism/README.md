@@ -1,6 +1,7 @@
 # Polymorphism in java
 
-### 
+## Accesing Overridden methods
+
 #### Non-polymorphic version:
 
 <p>
@@ -58,7 +59,7 @@ Examples of polymorphism in nature:
 - At run-time it depends on the type of the object being referred to (not the type of the reference variable) that determines which version of the overridden method will be executed.
 
 
-### Accessing Specialised Method
+## Accessing Specialised Method
 
 <p>
     <img src="./image/specialisedMethod/Ex1UML.png">
@@ -129,3 +130,135 @@ NOTE:
     <img src="./image/advantage/AnimalApp.png">
     <p align="center">Different implementation and leveraging power of polymorphism</p>
 </p>
+
+
+## Types of polymorphism
+
+<p>
+    <img src="./image/types_of_polymorphism/intro.png">
+</p>
+
+### 1. Compile-time Polymorphism/ Virtual/ Static/ Compile-time binding/ Early binding/ Static binding
+
+
+<p>
+    <img src="./image/types_of_polymorphism/CompileTimePolymorphism.png">
+</p>
+
+
+### 2. Run-time Polymorphism/ Real/ Dynamic/ Run-time Binding
+
+<p>
+    <img src="./image/types_of_polymorphism/RuntimePolymorphism.png">
+</p>
+
+
+
+**Ponder upon this question: Do static members participate in inheritance?**
+
+> ##### Rule - 9
+- Answer: Yes it does participate in inheritance, this is rule number-9 of inheritance.
+
+Example:
+
+```java
+class Parent {
+    static int a = 10;
+
+    static void disp() {
+        System.out.println("Parent-static method");
+    }
+}
+
+class Child extends Parent {
+
+}
+
+class Launch {
+    public static void main(String...args) {
+        Child.disp(); // Parent-static method
+        System.out.println(Child.a);
+    }
+}
+```
+
+## Overriding with respect to Static methods
+
+- Static methods cannnot be overridden as they are resolved `compile-time` based on the type of the reference. This is known as **method hididng** where the parent class static method is hidden by child class static method.
+
+1. Case-1
+
+```java
+class Parent {
+    static void disp() {
+        System.out.println("Parent-static method");
+    }
+}
+
+class Child extends Parent {
+    void disp() { // overridden method is static -> this instance method cannot override the static method from parent
+        System.out.println("Child-instance method");
+    }
+}
+```
+
+2. Case-2
+
+```java
+class Parent {
+    void disp() {
+        System.out.println("Parent-instance method");
+    }
+}
+
+class Child extends Parent {
+    static void disp() { // overriding method is static -> this static method cannot hide the instance method from parent
+        System.out.println("Child-static method");
+    }
+}
+```
+
+3. Case-3
+
+```java
+class Parent {
+    void disp() {
+        System.out.println("Parent-instance method");
+    }
+}
+
+class Child extends Parent {
+    void disp() { // Method overriding
+        System.out.println("Child-instance method");
+    }
+}
+```
+
+4. Case-4
+
+```java
+class Parent {
+    static void disp() {
+        System.out.println("Parent-static method");
+    }
+}
+
+class Child extends Parent {
+    static void disp() { // Method hiding
+        System.out.println("Child-static method");
+    }
+}
+
+class Launch {
+    public static void main(String...args) {
+        Parent ref1 = new Parent();
+        ref1.disp();   // Parent-static method
+
+        Child ref2 = new Child();
+        ref2.disp();   // Child-static method
+
+        Parent ref3 = new Child();
+        ref3.disp();   // Parent-static method
+    }
+}
+```

@@ -125,6 +125,7 @@ class Demo2 extends Demo1 {
 - Though constructor do not get inherited, they will be executed because of the `super()`.
 [Java Code](./example/Rule8.java)
 
+### 9. Static Members
 <p>
     <img src="./image/constructor.png">
 </p>
@@ -971,3 +972,4 @@ NOTE:
 </p>
 
 > [Example demonstrating above image](./example/delegation/Ex1.java)
+
