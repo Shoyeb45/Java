@@ -959,3 +959,15 @@ NOTE:
 - Aggregation is a <u>loose bound</u> `has-a` relationship (Weak association).
 - Tight bound "has-a" relationship is when the <u>enclosing object</u> is inaccessible(destroyed) even the <u>contained object remains accessible</u>.
 - Loose bound "has-a" relationship is when even if the <u>enclosing object</u>. is <u>inaccessible</u>(destroyed) still the <u>contained object remains accessible</u>.
+
+
+# Delegation Model
+
+- Delegation means handover the responsibility for a particular task to another class or method.
+- It is a technique where an object expresses certain behaviour to outside world but in reality delegates the responsibility for implementing the behaviour to an associated object.
+
+<p>
+    <img src="./image/delelgation/intro.png">
+</p>
+
+> [Example demonstrating above image](./example/delegation/Ex1.java)
