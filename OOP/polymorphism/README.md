@@ -196,7 +196,7 @@ class Parent {
 }
 
 class Child extends Parent {
-    void disp() { // overridden method is static -> this instance method cannot override the static method from parent
+    void disp() { // Error : overridden method is static -> this instance method cannot override the static method from parent
         System.out.println("Child-instance method");
     }
 }
@@ -212,7 +212,7 @@ class Parent {
 }
 
 class Child extends Parent {
-    static void disp() { // overriding method is static -> this static method cannot hide the instance method from parent
+    static void disp() { // Error : overriding method is static -> this static method cannot hide the instance method from parent
         System.out.println("Child-static method");
     }
 }
@@ -262,3 +262,44 @@ class Launch {
     }
 }
 ```
+
+
+## `instanceof` operator
+
+- The `instanceof` operator is used to check whether an object is an instance of a particular class or not. It is also know as *type comparision operator*.
+- It returns `true` or `false`
+Syntax:
+```java
+objectName instanceof className
+```
+
+Example : 
+
+```java
+CargoPlane cp = new CargoPlane();
+FighterPlane fp = null;
+System.out.println(cp instanceof CargoPlane); // true
+System.out.println(cp instanceof PassangerPlane);  // Compilation Error
+System.out.println(cp instanceof FighterPlane);    // Compilation Error
+System.out.println(cp instanceof Plane); // true
+System.out.println(fp instanceof FighterPlane); // false
+```
+
+> NOTE: `instanceof` operator is very useful to avoid ClassCastException. 
+
+Example :
+```java
+class Animal {}
+class Deer extends Animal {}
+class Tiger extends Animal {}
+
+public class Launch {
+    public static void main(String...args) {
+        Animal a = new Deer();// Upcasting: Deer To Animal (Valid)
+        Tiger c = (Tiger) a;  // Downcasting Animal to Tiger (Invalid)
+        System.out.println("Successfully casted to a tiger");
+    }
+}
+```
+
+- Above code will generate `ClassCastException`.

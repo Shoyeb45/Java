@@ -12,6 +12,9 @@
         "JavaBasic3",
         "JavaBasic2",
         "JavaBasic1",
-        ""
-    ]
+        "",
+        "OOP\\abstraction\\geometric_shapes",
+        "OOP\\abstraction"
+    ],
+    "java.project.referencedLibraries": []
 }
