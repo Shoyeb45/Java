@@ -559,6 +559,7 @@ Within a static context, if an object is created then the instance control flow 
 2. Instance varible assignments and instance blocks execution sequentially
 3. Execution of constructors
 
+<br>
 2. Ex: 2
 
 [Example code](./example/instance_inheritance/Ex2.java)
