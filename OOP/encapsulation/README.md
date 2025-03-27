@@ -223,7 +223,7 @@ Example 4:
 1. Within the same calss : It can be achieved using `this()`.
 2. Between the subclass and the super class : It can be achieved by using `super()`
 
-- The first line withing a constructor can be either `super()` constrictor call or `this()` constructor call. This ensures the parent class object is in proper state before referring ti within the child class constructor.
+- The first line within a constructor can be either `super()` constructor call or `this()` constructor call. This ensures the parent class object is in proper state before referring ti within the child class constructor.
 - If there is no explicit call to `super()` or `this()`, the java compiler automatically inserts a call to `super()`.
 - There must exist atleast one constructor that does not use `this()` to avoid recursive constructor calls.
 - `this()` or `super()` should always be the first statement inside a constructor.
