@@ -82,7 +82,7 @@ Examples of polymorphism in nature:
 - Down-casting refers to the process of temporarily converting parent-type reference to child-type so that the specialized method of the child class can be accessed.
 
 <p>
-    <img src="./image/specialisedMethod/ex1sol.png">
+    <img src="./image/specialisedMethod/ex1Sol.png">
 </p>
 
 
