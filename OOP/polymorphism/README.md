@@ -184,7 +184,7 @@ class Launch {
 
 ## Overriding with respect to Static methods
 
-- Static methods cannnot be overridden as they are resolved `compile-time` based on the type of the reference. This is known as **method hididng** where the parent class static method is hidden by child class static method.
+- Static methods cannnot be overridden as they are resolved `compile-time` based on the type of the reference. This is known as **method hiding** where the parent class static method is hidden by child class static method.
 
 1. Case-1
 

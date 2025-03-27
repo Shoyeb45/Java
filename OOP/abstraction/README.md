@@ -46,7 +46,7 @@ Examples:
 #### Abstract Methods
 
 - Abstract methods are such methods which contains only the signature of the method but not implementation (method body). 
-- The advantage of abstract methods is that abstract methods ensures that the method in the child classes do not become specialised methods instea they remain as overridden method. hence, loose coupling and polymorphoism can be achieved.
+- The advantage of abstract methods is that abstract methods ensures that the method in the child classes do not become specialised methods instead they remain as overridden method. Hence, loose coupling and polymorphoism can be achieved.
 
 NOTE : If a class contains atleast one abstract method then the class must be declared as abstract.
 
