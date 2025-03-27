@@ -54,7 +54,7 @@ Examples of polymorphism in nature:
 
 - It refers to the ability of an object to take on multiple forms.
 
-- **Dynamic method dispatch** : It is the mechanism by which a call to an overridden method id resolved at run-time rather than compile time.
+- **Dynamic method dispatch** : It is the mechanism by which a call to an overridden method is resolved at run-time rather than compile time.
 - When an overridden method is called through a parent reference, java(JVM) determines which version (Parent/Child) of that method is to be executed based upon the type of the object being refrred to at the time call occurs. Thus determination is made at the run-time.
 - At run-time it depends on the type of the object being referred to (not the type of the reference variable) that determines which version of the overridden method will be executed.
 
