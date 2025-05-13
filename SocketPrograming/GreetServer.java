@@ -27,13 +27,13 @@ public class GreetServer {
                 // Read message from client
                 inputLine = in.readLine();
                 if (inputLine == null || inputLine.equalsIgnoreCase("exit")) {
-                    System.out.println("Client ended the chat.");
+                    System.out.println("Najma ended the chat.");
                     break;
                 }
-                System.out.println("Client: " + inputLine);
+                System.out.println("Najma: " + inputLine);
 
                 // Send reply to client
-                System.out.print("Server: ");
+                System.out.print("Shoyeb: ");
                 outputLine = console.readLine();
                 out.println(outputLine);
                 if (outputLine.equalsIgnoreCase("exit")) {
@@ -53,9 +53,9 @@ public class GreetServer {
             out.close();
             clientSocket.close();
             serverSocket.close();
-        } catch (IOException e) {
-            System.out.println("Error closing server: " + e.getMessage());
-        }
+            } catch (IOException e) {
+                System.out.println("Error closing server: " + e.getMessage());
+            }
     }
 
     public static void main(String[] args) {

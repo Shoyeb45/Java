@@ -20,7 +20,7 @@ public class GreetClient {
             String inputLine, outputLine;
             while (true) {
                 // Send message to server
-                System.out.print("Client: ");
+                System.out.print("Najma: ");
                 outputLine = console.readLine();
                 out.println(outputLine);
                 if (outputLine.equalsIgnoreCase("exit")) {
@@ -30,10 +30,10 @@ public class GreetClient {
                 // Read response from server
                 inputLine = in.readLine();
                 if (inputLine == null || inputLine.equalsIgnoreCase("exit")) {
-                    System.out.println("Server ended the chat.");
+                    System.out.println("Shoyeb ended the chat.");
                     break;
                 }
-                System.out.println("Server: " + inputLine);
+                System.out.println("Shoyeb: " + inputLine);
             }
 
             stopConnection();
@@ -54,6 +54,6 @@ public class GreetClient {
 
     public static void main(String[] args) {
         GreetClient client = new GreetClient();
-        client.startConnection("10.7.9.134", 6666);
+        client.startConnection("10.108.173.98", 6666);
     }
 }
