@@ -27,13 +27,13 @@ public class GreetServer {
                 // Read message from client
                 inputLine = in.readLine();
                 if (inputLine == null || inputLine.equalsIgnoreCase("exit")) {
-                    System.out.println("Najma ended the chat.");
+                    System.out.println("Client ended the chat.");
                     break;
                 }
-                System.out.println("Najma: " + inputLine);
+                System.out.println("Client: " + inputLine);
 
                 // Send reply to client
-                System.out.print("Shoyeb: ");
+                System.out.print("Server: ");
                 outputLine = console.readLine();
                 out.println(outputLine);
                 if (outputLine.equalsIgnoreCase("exit")) {
